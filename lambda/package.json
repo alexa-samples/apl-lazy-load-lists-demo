@@ -1,0 +1,15 @@
+{
+  "name": "apl-lazy-load-list",
+  "version": "1.0.0",
+  "description": "Lazy load list example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amazon Alexa",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0"
+  }
+}

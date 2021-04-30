@@ -1,0 +1,137 @@
+{
+    "type": "APL",
+    "version": "1.3",
+    "settings": {},
+    "theme": "light",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {
+        "TextButton": {
+            "description": "A basic text Button",
+            "parameters":[
+                {
+                    "name": "touchWrapperId",
+                    "type": "string"
+                },
+                {
+                    "name": "buttonText",
+                    "type": "string"
+                }
+            ],
+            "items": [
+                {
+                    "type": "TouchWrapper",
+                    "id": "${touchWrapperId}",
+                    "paddingLeft": "2vw",
+                    "paddingRight": "2vw",
+                    "item": {
+                        "type": "Text",
+                        "text": "${buttonText}",
+                        "fontSize": "32dp"
+                    },
+                    "onPress": {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "BUTTON_PRESSED"
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "mainTemplate": {
+        "parameters": [
+            "staticDataSource",
+            "colorDynamicSource"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "height": "100%",
+                "width": "100%",
+                "paddingTop": "2vh",
+                "paddingBottom": "2vh",
+                "items": [
+                    {
+                        "type": "Frame",
+                        "width": "100vw",
+                        "height":"15vh",
+                        "paddingTop": "2vh",
+                        "paddingBottom": "2vh",
+                        "id": "HEADER_CONTAINER",
+                        "backgroundColor": "${staticDataSource.backgroundColor}",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "direction": "row",
+                                "alignItems":"center",
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "paddingLeft": "2vw",
+                                        "text": "${staticDataSource.headerTitle}:",
+                                        "fontSize": "40dp"
+                                    }, 
+                                    {
+                                        "type": "TextButton",
+                                        "touchWrapperId": "PAGER_BUTTON",
+                                        "buttonText":"Pager"
+                                        
+                                    },
+                                    {
+                                        "type":"TextButton",
+                                        "touchWrapperId": "SEQUENCE_BUTTON",
+                                        "buttonText":"Sequence"
+                                        
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Sequence",
+                        "height": "80vh",
+                        "data": "${colorDynamicSource}",
+                        "numbered": true,
+                        "id":"SOURCE_LIST",
+                        "items": {
+                            "type": "Frame",
+                            "width": "100vw",
+                            "height": "10vh",
+                            "id": "frame-${data.name}",
+                            "backgroundColor": "${data.value}",
+                            "item": {
+                                "type": "TouchWrapper",
+                                "item": {
+                                    "type": "Text",
+                                    "text": "${data.name}",
+                                    "color": "black",
+                                    "paddingLeft": "2vw",
+                                    "width": "100vw"
+                                },
+                                "onPress": {
+                                    "type": "SendEvent",
+                                    "arguments": [
+                                        "${data.name}",
+                                        "${data.index}"
+                                    ]
+                                }
+                            }
+                        },
+                        "numbering": "normal",
+                        "alignSelf": "center"
+                    }
+                ]
+            }
+        ]
+    }
+}

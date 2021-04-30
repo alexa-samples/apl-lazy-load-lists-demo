@@ -1,0 +1,83 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "color picker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ChangeColorIntent",
+                    "samples": [
+                        "change to {color}",
+                        "select {color}",
+                        "pick {color}",
+                        "{color}"
+                    ],
+                    "slots": [{
+                        "name": "color",
+                        "type": "Colors"
+                    }]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {"name":"Colors","values":[{"name":{"value":"Alice Blue"},"id":0},{"name":{"value":"Antique White"},"id":1},{"name":{"value":"Aqua"},"id":2},{"name":{"value":"Aquamarine"},"id":3},{"name":{"value":"Azure"},"id":4},{"name":{"value":"Beige"},"id":5},{"name":{"value":"Black"},"id":6},{"name":{"value":"Blue"},"id":7},{"name":{"value":"Blue Violet"},"id":8},{"name":{"value":"Brown"},"id":9},{"name":{"value":"Cadet Blue"},"id":10},{"name":{"value":"Chartreuse"},"id":11},{"name":{"value":"Chocolate"},"id":12},{"name":{"value":"Coral"},"id":13},{"name":{"value":"Cornflower Blue"},"id":14},{"name":{"value":"Crimson"},"id":15},{"name":{"value":"Dark Blue"},"id":16},{"name":{"value":"Dark Cyan"},"id":17},{"name":{"value":"Dark Goldenrod"},"id":18},{"name":{"value":"Dark Gray"},"id":19},{"name":{"value":"Dark Green"},"id":20},{"name":{"value":"Dark Khaki"},"id":21},{"name":{"value":"Dark Magenta"},"id":22},{"name":{"value":"Dark Olive Green"},"id":23},{"name":{"value":"Dark Orange"},"id":24},{"name":{"value":"Dark Orchid"},"id":25},{"name":{"value":"Dark Red"},"id":26},{"name":{"value":"Dark Salmon"},"id":27},{"name":{"value":"Dark Slate Gray"},"id":28},{"name":{"value":"Dark Turquoise"},"id":29},{"name":{"value":"Dark Violet"},"id":30},{"name":{"value":"Deep Pink"},"id":31},{"name":{"value":"Deep Sky Blue"},"id":32},{"name":{"value":"Dim Gray"},"id":33},{"name":{"value":"Dodger Blue"},"id":34},{"name":{"value":"Firebrick"},"id":35},{"name":{"value":"Forest Green"},"id":36},{"name":{"value":"Fuchsia"},"id":37},{"name":{"value":"Gainsboro"},"id":38},{"name":{"value":"Ghost White"},"id":39},{"name":{"value":"Gold"},"id":40},{"name":{"value":"Goldenrod"},"id":41},{"name":{"value":"Gray"},"id":42},{"name":{"value":"Web Gray"},"id":43},{"name":{"value":"Green"},"id":44},{"name":{"value":"Web Green"},"id":45},{"name":{"value":"Green Yellow"},"id":46},{"name":{"value":"Honeydew"},"id":47},{"name":{"value":"Hot Pink"},"id":48},{"name":{"value":"Indian Red"},"id":49},{"name":{"value":"Indigo"},"id":50},{"name":{"value":"Ivory"},"id":51},{"name":{"value":"Khaki"},"id":52},{"name":{"value":"Lavender"},"id":53},{"name":{"value":"Lavender Blush"},"id":54},{"name":{"value":"Lawn Green"},"id":55},{"name":{"value":"Lemon Chiffon"},"id":56},{"name":{"value":"Light Blue"},"id":57},{"name":{"value":"Light Coral"},"id":58},{"name":{"value":"Light Cyan"},"id":59},{"name":{"value":"Light Goldenrod"},"id":60},{"name":{"value":"Light Gray"},"id":61},{"name":{"value":"Light Green"},"id":62},{"name":{"value":"Light Pink"},"id":63},{"name":{"value":"Light Salmon"},"id":64},{"name":{"value":"Light Sea Green"},"id":65},{"name":{"value":"Light Sky Blue"},"id":66},{"name":{"value":"Light Slate Gray"},"id":67},{"name":{"value":"Light Steel Blue"},"id":68},{"name":{"value":"Light Yellow"},"id":69},{"name":{"value":"Lime Green"},"id":70},{"name":{"value":"Maroon"},"id":71},{"name":{"value":"Web Maroon"},"id":72},{"name":{"value":"Medium Aquamarine"},"id":73},{"name":{"value":"Medium Blue"},"id":74},{"name":{"value":"Medium Orchid"},"id":75},{"name":{"value":"Medium Purple"},"id":76},{"name":{"value":"Medium Sea Green"},"id":77},{"name":{"value":"Medium Spring Green"},"id":78},{"name":{"value":"Medium Turquoise"},"id":79},{"name":{"value":"Medium Violet Red"},"id":80},{"name":{"value":"Midnight Blue"},"id":81},{"name":{"value":"Mint Cream"},"id":82},{"name":{"value":"Misty Rose"},"id":83},{"name":{"value":"Navajo White"},"id":84},{"name":{"value":"Navy Blue"},"id":85},{"name":{"value":"Old Lace"},"id":86},{"name":{"value":"Olive"},"id":87},{"name":{"value":"Olive Drab"},"id":88},{"name":{"value":"Orange"},"id":89},{"name":{"value":"Orange Red"},"id":90},{"name":{"value":"Orchid"},"id":91},{"name":{"value":"Pale Goldenrod"},"id":92},{"name":{"value":"Pale Green"},"id":93},{"name":{"value":"Pale Turquoise"},"id":94},{"name":{"value":"Pale Violet Red"},"id":95},{"name":{"value":"Papaya Whip"},"id":96},{"name":{"value":"Peach Puff"},"id":97},{"name":{"value":"Peru"},"id":98},{"name":{"value":"Pink"},"id":99},{"name":{"value":"Plum"},"id":100},{"name":{"value":"Powder Blue"},"id":101},{"name":{"value":"Purple"},"id":102},{"name":{"value":"Web Purple"},"id":103},{"name":{"value":"Rebecca Purple"},"id":104},{"name":{"value":"Red"},"id":105},{"name":{"value":"Rosy Brown"},"id":106},{"name":{"value":"Royal Blue"},"id":107},{"name":{"value":"Salmon"},"id":108},{"name":{"value":"Sandy Brown"},"id":109},{"name":{"value":"Sea Green"},"id":110},{"name":{"value":"Seashell"},"id":111},{"name":{"value":"Sienna"},"id":112},{"name":{"value":"Silver"},"id":113},{"name":{"value":"Sky Blue"},"id":114},{"name":{"value":"Slate Blue"},"id":115},{"name":{"value":"Slate Gray"},"id":116},{"name":{"value":"Snow"},"id":117},{"name":{"value":"Spring Green"},"id":118},{"name":{"value":"Steel Blue"},"id":119},{"name":{"value":"Tan"},"id":120},{"name":{"value":"Teal"},"id":121},{"name":{"value":"Thistle"},"id":122},{"name":{"value":"Tomato"},"id":123},{"name":{"value":"Turquoise"},"id":124},{"name":{"value":"Violet"},"id":125},{"name":{"value":"Wheat"},"id":126},{"name":{"value":"White"},"id":127},{"name":{"value":"White Smoke"},"id":128},{"name":{"value":"Yellow"},"id":129},{"name":{"value":"Yellow Green"},"id":130}]}
+            ]
+        }
+    }
+}

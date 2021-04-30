@@ -1,0 +1,65 @@
+{
+    "staticDataSource": {
+        "backgroundColor": "#5d8aa8",
+        "headerTitle": "Color Selector"
+    },
+    "colorDynamicSource": {
+        "type": "dynamicIndexList",
+        "listId": "colorList",
+        "startIndex": 0,
+        "minimumInclusiveIndex": 0,
+        "maximumExclusiveIndex": 682,
+        "items": [
+            {
+                "index": 0,
+                "name": "Almond",
+                "value": "#efdecd"
+            },
+            {
+                "index": 1,
+                "name": "Amaranth",
+                "value": "#e52b50"
+            },
+            {
+                "index": 2,
+                "name": "Amber",
+                "value": "#ffbf00"
+            },
+            {
+                "index": 3,
+                "name": "Amethyst",
+                "value": "#9966cc"
+            },
+            {
+                "index": 4,
+                "name": "Apple green",
+                "value": "#8db600"
+            },
+            {
+                "index": 5,
+                "name": "Apricot",
+                "value": "#fbceb1"
+            },
+            {
+                "index": 6,
+                "name": "Aqua",
+                "value": "#00ffff"
+            },
+            {
+                "index": 7,
+                "name": "Aquamarine",
+                "value": "#7fffd4"
+            },
+            {
+                "index": 8,
+                "name": "Army green",
+                "value": "#4b5320"
+            },
+            {
+                "index": 9,
+                "name": "Ash grey",
+                "value": "#b2beb5"
+            }
+        ]
+    }
+}
